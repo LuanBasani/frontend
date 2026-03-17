@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel e tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+  href="https://use.fontawesome.com/releases/v7.2.0/css/all.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Pedra, Papel e Tesoura</h1>
+
+        <div class="battle-arena">
+            <div class="fighter-card" id="player-card">
+                <span class="label">Usuário</span>
+                <div class="avatar"><i class="fa-solid fa-user" style="color: rgb(112, 56, 125);"></i></div>
+                <div class="choice-display" id="player-choice">?</div>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div class="fighter-card" id="comp-card">
+                <span class="label">Computador</span>
+                <div class="avatar"><i class="fa-solid fa-robot" style="color: rgb(112, 56, 125);"></i> </div>
+                <div class="choice-display" id="comp-choice">?</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="action-buttons">
+                <button id="btnPedra">🪨 Pedra</button>
+                <button id="btnPapel">📄 Papel</button>
+                <button id="btnTesoura">✂️ Tesoura</button>
+            </div>
+            <button id="btnPlay" class="play-trigger">Começar!</button>
+        </div>
+
+        <p id="result-messageText"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
