@@ -28,4 +28,7 @@ Um mini-jogo clássico de "Pedra, Papel e Tesoura" (Joquempô) desenvolvido com 
 4. Os dois valores (do jogador e do computador) são passados para a função `decidirVencedor`.
 5. A tela é atualizada com os resultados e, após 1500ms, o jogo se limpa sozinho para a próxima partida.
 
+## Dificuldades
+ * Planejamento da lógica, tanto de decidir o vencedor, quanto para aleatorizar a escolha do computador
+ * Temporizador Ant-Spam
 ---
