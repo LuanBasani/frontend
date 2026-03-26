@@ -32,7 +32,24 @@ itensNav.forEach((e) => {
   let item = document.createElement("a");
   item.innerHTML = e;
   item.href = e.toLowerCase() + ".html"; // criando o link
-  item.style.textDecoration = none;
-
+  item.style.textDecoration = "none"; // remove o link
+  item.style.color = "inherit"; //mantem a cor original
   divNav.appendChild(item); //adicionando o item a divNav
 });
+
+//faça um rodapé para a página
+
+let footer = document.createElement("footer");
+footer.style.backgroundColor = "grey";
+footer.style.height = "10vh";
+footer.style.width = "100%";
+footer.style.position = "fixed";
+footer.style.bottom = "0";
+let paragrafoFooter = document.createElement("p");
+paragrafoFooter.innerHTML = "Copyright &copy; 2026 - Todos os direitos reservados.";
+paragrafoFooter.style.color = "aliceblue"; 
+paragrafoFooter.style.textAlign = "center";
+paragrafoFooter.style.lineHeight = "5vh";
+footer.appendChild(paragrafoFooter);
+document.body.appendChild(footer);
+
